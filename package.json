@@ -1,0 +1,29 @@
+{
+  "name": "proxke",
+  "version": "0.0.1",
+  "description": "proxy server using Hapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doron2402/proxke.git"
+  },
+  "keywords": [
+    "hapi",
+    "proxke",
+    "proxy"
+  ],
+  "author": "Doron Segal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doron2402/proxke/issues"
+  },
+  "homepage": "https://github.com/doron2402/proxke",
+  "dependencies": {
+    "hapi": "~2.6.0",
+    "minimist": "0.0.8",
+    "objifuncy": "0.0.22"
+  }
+}

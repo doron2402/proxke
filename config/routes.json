@@ -1,0 +1,64 @@
+{
+	"partner_name": {
+		"tls": {
+			"active": false,
+			"key": "./partner/partner_name/fake-key.pem",
+			"cert": "./partner/partner_name/fake-crt.pem"
+		},
+		"path": [
+			{
+				"req_url": "/api/users/new/1",
+				"method": "POST",
+				"response": {
+					"type": "application/json",
+					"header": ["header-key","some-header-value"],
+					"data": "{data: 'done'}",
+					"code": 500
+				}
+			},{
+				"req_url": "/Justin/hi/2",
+				"method": "POST",
+				"response": {
+					"type": "application/xml",
+					"header": ["header-key","some-header-value"],
+					"data": "<xml><name>asdf</name></xml>",
+					"code": 500
+				}
+			},{
+				"req_url": "/Services/com/cingular/csi/cam/InquireAccountProfile",
+				"method": "POST",
+				"response": {
+					"type": "application/xml",
+					"header": ["header-key","some-header-value"],
+					"data": "./att/csi_iap_result_test.xml"
+				}
+			}
+		]
+	},
+	"some_other_partner": {
+		"tls": {
+			"active": false
+		},
+		"path": [
+			{
+				"req_url": "/api/users/1",
+				"method": "POST",
+				"response": {
+					"type": "text/html",
+					"header": ["username", "user_1"],
+					"data": "<html><head><title>Testing Proxy User</title></head><body><h1>It Works</h1></body></html>",
+					"code": 200
+				}
+			},{
+				"req_url": "/api/posts/1",
+				"method": "POST",
+				"response": {
+					"type": "text/html",
+					"header": ["post", "post_1"],
+					"data": "<html><head><title>Testing Proxy Post</title></head><body><h1>It Works</h1></body></html>",
+					"code": 200
+				}
+			}
+		]
+	}
+}
