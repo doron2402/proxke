@@ -13,7 +13,7 @@
 					"type": "application/json",
 					"header": ["header-key","some-header-value"],
 					"data": "{data: 'done'}",
-					"code": 500
+					"code": 200
 				}
 			},{
 				"req_url": "/Justin/hi/2",
