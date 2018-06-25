@@ -4,7 +4,9 @@
   "description": "proxy server using Hapi",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -22,8 +24,10 @@
   },
   "homepage": "https://github.com/doron2402/proxke",
   "dependencies": {
-    "hapi": "~2.6.0",
+    "hapi": "~13.0.0",
     "minimist": "0.0.8",
-    "objifuncy": "0.0.22"
-  }
+    "objifuncy": "0.0.22",
+    "snyk": "^1.83.0"
+  },
+  "snyk": true
 }
