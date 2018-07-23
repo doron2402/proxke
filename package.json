@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/doron2402/proxke",
   "dependencies": {
-    "hapi": "~2.6.0",
+    "hapi": "~17.0.0",
     "minimist": "0.0.8",
     "objifuncy": "0.0.22"
   }
